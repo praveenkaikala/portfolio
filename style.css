@@ -1,0 +1,118 @@
+body
+{
+    background-color: rgb(1, 1, 56);
+    color: aliceblue;
+}
+nav
+{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(2, 2, 47);
+    
+}
+nav ul{
+    display: flex;
+    
+
+}
+nav ul li{
+    list-style: none;
+    margin: 18px;
+    justify-content: space-around;
+  
+}
+nav ul li a{
+    color: aliceblue;
+}
+.btn
+{
+    background-color: rgb(1, 1, 56);
+    color: aliceblue;
+   border-color: blueviolet;
+}
+nav ul li a:hover{
+    color: rgb(162, 74, 244);
+    font-size: 1.1rem;
+}
+.left
+{
+    font-size: 35px;
+}
+section
+{
+    justify-content: space-around;
+    display: flex;
+    margin: 23px;
+}
+.leftsection
+{
+    width: 30%;
+    font-size: 2rem;
+    margin-top: 70px;
+    text-align: center;
+    min-width:50%;
+}
+
+
+.rightsection
+{
+   margin-top: 30px;
+   min-width: 50%;
+   text-align: center;
+   position:relative; 
+   top:50px;
+   
+   
+}
+.color
+{
+    color: rgb(156, 67, 239);
+}
+.line
+{
+    margin-top: 150px;
+}
+.head
+{
+   text-align: center;
+   width: 100%;
+   display: inline;
+}
+.matter{
+    padding:50px;
+    text-align: center;
+    font-size: 2rem;
+}
+.matter span{
+    color: rgb(153, 65, 236);
+}
+@media(max-width:500px)
+{
+    section{
+        display: inline;
+    
+    }
+    .leftsection
+    {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .rightsection
+    {
+        width: 100%;
+        justify-content: center;
+    
+        
+    }
+    nav  {
+       display: inline;
+      
+    }
+   .left{
+    text-align: center;
+   }
+
+  
+}
