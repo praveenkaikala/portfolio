@@ -7,44 +7,77 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav>
                 <div class="left">portfolio</div>
                 <div class="right">
                     <UL>
                         <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">projects</a></li>
-                        <li><a href="">contact</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#project">project</a></li>
+                        <li><a href="#contact">contact</a></li>
             
                     </UL>
                   
                 </div>
             </nav>
         </header>
-        <section>
+        <section class="s1">
             <div class="leftsection">hi,my name is <span class="color">praveen</span>
                 <div>i am a </div>
-                    <div>web developer</div>  
+                    <div>web developer</div> 
+                   <div class="logo">
+                    <a href=""><box-icon type='logo' name='github' color="#a34cf5"></box-icon></a>
+                    <a href=""><box-icon name='linkedin-square' type='logo' color='#a34cf5' ></box-icon></a>
+                    <a href=""><box-icon name='instagram' type='logo' color='#a34cf5' ></box-icon></a> 
+                   </div>
                     <button class="btn">download cv</button>
                 </div>
                     
             <div class="rightsection">
-                <img src="./download.png" alt="">
+                <img src="./WhatsApp Image 2023-08-17 at 19.55.46.jpg" alt="">
             </div>
            
         </section>
-        <div class="line"><hr></div>
+        <div id="about"></div>
+        <div class="heading" ><p>about</p></div>
         <section class="secondsection">
-            <div class="head"><h1>about</h1></div>
-        </section>
-        <div class="matter">
+           
+           <div class="matter">
             <div> <p>i am studying</p>
              <p>B-tech <span>2nd year</span> </p></div>
-         </div>
+             </div>
+        </section>
+        <div id="skills"></div>
+        <div class="heading" >skills</div>
+        <section class="secondsection">
 
+        </section>
+        <div id="project"></div>
+        <div class="heading">projects</div>
+        <section class="secondsection">
+
+        </section>
+        <div id="contact"></div>
+        <div class="heading" ></div>
+        <section class="secondsection">
+            <form action="./email.php" method="post">
+              
+                <input type="text" id="name" name="name" required placeholder="name"><br>
+        
+                <input type="email" id="email" name="email" required placeholder="email"><br>
+        
+                
+                <textarea id="message" name="message" required placeholder="message"></textarea><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
         
      </body>
 </html>
