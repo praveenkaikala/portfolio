@@ -1,71 +1,61 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>praveen portfolio</title>
+        <title>portifolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </head>
     <body>
-        <header class="header">
-            <nav>
-                <div class="left">portfolio</div>
-                <div class="right">
-                    <UL>
-                        <li><a href="">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#project">project</a></li>
-                        <li><a href="#contact">contact</a></li>
-            
-                    </UL>
-                  
-                </div>
-            </nav>
-        </header>
-        <section class="s1">
-            <div class="leftsection">hi,my name is <span class="color">praveen</span>
-                <div>i am a </div>
-                    <div>web developer</div> 
-                   <div class="logo">
-                    <a href=""><box-icon type='logo' name='github' color="#a34cf5"></box-icon></a>
-                    <a href=""><box-icon name='linkedin-square' type='logo' color='#a34cf5' ></box-icon></a>
-                    <a href=""><box-icon name='instagram' type='logo' color='#a34cf5' ></box-icon></a> 
-                   </div>
-                    <button class="btn">download cv</button>
-                </div>
-                    
-            <div class="rightsection">
-                <img src="./WhatsApp Image 2023-08-17 at 19.55.46.jpg" alt="">
+       <div class="root">
+        <nav class="nav">
+            <div class="name"><h2>portifolio</h2></div>
+            <div class="option">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#project">projects</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
             </div>
-           
-        </section>
-        <div id="about"></div>
-        <div class="heading" ><p>about</p></div>
-        <section class="secondsection">
-           
-           <div class="matter">
-            <div> <p>i am studying</p>
-             <p>B-tech <span>2nd year</span> </p></div>
-             </div>
-        </section>
-        <div id="skills"></div>
-        <div class="heading" >skills</div>
-        <section class="secondsection">
 
-        </section>
-        <div id="project"></div>
-        <div class="heading">projects</div>
-        <section class="secondsection">
-
-        </section>
-        <div id="contact"></div>
-        <div class="heading">contact me</div>
-        <div class="heading" ></div>
-        <section class="secondsection">
+        </nav>
+        <div class="content home" id="home">
+            <div class="matter mat">
+                <p class="font">hi,my name is <br> <span>praveen</span> <br>i am frontend developer</p>
+            </div>
+            <div class="image matter mat">
+                <img src="./praveen.jpg" alt="">
+            </div>
+        </div>
+        <div class="content " id="about">
+            <h2 class="heading">about</h2>
+           
+            <div class="about">
+                <p>Greetings! I'm thrilled to welcome you to my portfolio. I'm a dedicated second-year B.Tech student with a fervent enthusiasm for front-end technology and its potential to shape captivating digital experiences. As I journey through my academic pursuits, I'm on a mission to master the art of crafting user-friendly and visually appealing interfaces.</p>
+            </div>
+        </div>
+        <div class="content projects" id="project">
+            <h2 class="heading">projects</h2>
+            
+            <div class="container">
+                   <div class="box"></div>
+                   <div class="box"></div>
+                   <div class="box"></div>
+                   <div class="box"></div>
+                   <div class="box"></div>
+                   <div class="box"></div>
+            </div>
+            
+        </div>
+        <div class="content skills" id="skills">
+            <h2 class="heading">skills</h2>
+        </div>
+        <div class="content contact" id="contact">
+            <h2 class="heading">contact me</h2>
             <form action="./email.php" method="post">
               
                 <input type="text" id="name" name="name" required placeholder="name"><br>
@@ -77,8 +67,9 @@
         
                 <input type="submit" value="Submit">
             </form>
-
-        </section>
+        </div>
+       </div>
         
-     </body>
+        <script src="" async defer></script>
+    </body>
 </html>
